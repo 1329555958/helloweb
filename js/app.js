@@ -4,10 +4,7 @@ mui("body").on("tap", "a", function(e) {
 		var href = t.getAttribute('href');
 		mui.openWindow({
 			url: href,
-			id: href,
-			waiting:{
-				title:'努力加载中...'
-			}
+			id: href
 		})
 		mui.preventDefault(e);
 	}

@@ -32,6 +32,27 @@
 	display: block;
 }
 
-.i-color-royal{
+.i-color-royal {
 	color: #8a6de9 !important;
+}
+
+.i-border-left {
+	border-left: 1px #AAAAAA solid;
+}
+
+.i-border-right {
+	border-right: 1px #AAAAAA solid;
+}
+
+.i-border-top {
+	border-top: 1px #AAAAAA solid;
+}
+
+.i-border-bottom {
+	border-bottom: 1px #AAAAAA solid;
+}
+
+
+.mui-btn-block{
+	padding: 10px 0 !important;
 }

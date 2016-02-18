@@ -18,6 +18,21 @@
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">理财平台</h1>
 		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="products.html">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">理财</span>
+			</a>
+			<a class="mui-tab-item" href="me.html">
+				<span class="mui-icon mui-icon-person-filled"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+
+		</nav>
 		<div class="mui-content mui-scroll-wrapper" id="uploadDiv">
 			<div class="mui-scroll">
 				<div>
@@ -247,7 +262,7 @@
 		</div>
 	</body>
 	<script src="//cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
-	<script type="text/javascript" src="js/app.js" ></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" charset="UTF-8">
 		var i = 2;
 		mui.init({
@@ -263,6 +278,7 @@
 					<div class="i-split-line"></div>\
 					<ul class="mui-table-view">\
 						<li class="mui-table-view-cell">\
+						<a href="prd.html">\
 							<div class="mui-row" style="border-bottom: 1px solid #AAAAAA; padding-bottom: 2px; margin-bottom: 10px;">\
 								<div class="mui-col-xs-5">' +
 								'<h6>和讯爆款宝' + (i++) + '</h6>\
@@ -289,6 +305,7 @@
 									<h6 style="margin-top: -12px;">起投金额</h6>\
 								</div>\
 							</div>\
+							</a>\
 						</li>\
 					</ul>\
 				</div>');
@@ -299,5 +316,6 @@
 			}
 		});
 	</script>
+	<script type="text/javascript" src="js/app.js"></script>
 
 </html>
