@@ -1,0 +1,37 @@
+.i-number {
+	color: #ff6235;
+	font-size: 22px;
+}
+
+.i-split-line {
+	height: 10px;
+}
+
+.i-font-normal {
+	font-style: normal;
+	color: #999999;
+	font-size: 15px;
+}
+
+.i-label-row {
+	font-style: normal;
+	font-size: 15px;
+	width: 100%;
+	float: left;
+}
+
+.i-label-row label {
+	display: block;
+	width: 100px;
+	color: #999999;
+	float: left;
+}
+
+.i-label-row span {
+	margin-left: 100px;
+	display: block;
+}
+
+.i-color-royal{
+	color: #8a6de9 !important;
+}
