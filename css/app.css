@@ -12,3 +12,22 @@
 	color: #999999;
 	font-size: 15px;
 }
+
+.i-label-row {
+	font-style: normal;
+	font-size: 15px;
+	width: 100%;
+	float: left;
+}
+
+.i-label-row label {
+	display: block;
+	width: 100px;
+	color: #999999;
+	float: left;
+}
+
+.i-label-row span {
+	margin-left: 100px;
+	display: block;
+}
