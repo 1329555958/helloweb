@@ -3,6 +3,12 @@
 	font-size: 22px;
 }
 
-.i-split-line{
+.i-split-line {
 	height: 10px;
+}
+
+.i-font-normal {
+	font-style: normal;
+	color: #999999;
+	font-size: 15px;
 }

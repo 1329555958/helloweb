@@ -10,85 +10,157 @@
 
 		<!--标准mui.css-->
 		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/app.css">
 	</head>
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">项目详情</h1>
+			<h1 class="mui-title">和讯爆款宝</h1>
 		</header>
+		<nav class="mui-bar mui-bar-tab" style="z-index: 999;">
+			<div>
+				<div class="mui-pull-left" style="padding:7px 90px 0 5px;position: relative;width: 100%;">
+					<span style="position: absolute;display: inline-block;height: 37px;line-height: 40px;width: 20px;text-align: center;">￥</span>
+					<input type="number" style="padding-left:20px;width: 100%;" placeholder="输入投资金额" id="investMoney" />
+				</div>
+				<div class="mui-pull-right" style="width: 85px;margin-left: -100%;">
+					<button class="mui-btn mui-btn-royal" style="height: 40px;">立即投资</button>
+				</div>
+			</div>
+		</nav>
 		<div class="mui-content">
-			<ul class="mui-table-view mui-table-view-chevron">
-				<li id="switch" class="mui-table-view-cell">
-					定时轮播
-					<div class="mui-switch">
-						<div class="mui-switch-handle"></div>
+			<div style="background-color: #FFFFFF;">
+				<div class="mui-text-center" style="padding: 10px;">
+					<span class="mui-badge mui-badge-royal" style="font-size: 30px;height: 70px;width:70px;line-height: 65px;"> 5%</span>
+				</div>
+				<div class="mui-row" style="padding:0 10px;">
+					<div class="mui-col-xs-4">
+						<h4 style="margin-bottom: 0;">￥100</h4>
+						<br />
+						<h6 style="margin-top: -12px;">起投金额</h6>
 					</div>
-				</li>
-			</ul>
-		</div>
-		<div id="slider" class="mui-slider" >
-			<div class="mui-slider-group mui-slider-loop">
-				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="images/yuantiao.jpg">
-					</a>
+
+					<div class="mui-col-xs-4 mui-text-center">
+						<h4 style="margin-bottom: 0;">￥80,000,000</h4>
+						<br />
+						<h6 style="margin-top: -12px;">项目总额</h6>
+					</div>
+
+					<div class="mui-col-xs-4 mui-text-right">
+						<h4 style="margin-bottom: 0;">￥19,000,000</h4>
+						<br />
+						<h6 style="margin-top: -12px;">剩余可投金额</h6>
+					</div>
 				</div>
-				<!-- 第一张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/shuijiao.jpg">
-					</a>
+				<div class="i-split-line"></div>
+				<div>
+					<div id="segmentedControl" class="mui-segmented-control">
+						<a class="mui-control-item mui-active" href="#prdDetails">
+				产品详情
+			</a>
+						<a class="mui-control-item" href="#investHis">
+				投资记录
+			</a>
+					</div>
+
 				</div>
-				<!-- 第二张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/muwu.jpg">
-					</a>
+				<div>
+					<div id="prdDetails" class="mui-control-content mui-active">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<a id="rate" class="mui-navigate-right">产品名称
+								<i class="mui-pull-right i-font-normal">和讯爆款宝</i>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="rate" class="mui-navigate-right">还款方式
+								<i class="mui-pull-right i-font-normal">一次性还本付息</i>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="rate" class="mui-navigate-right">起息日
+								<i class="mui-pull-right i-font-normal">2016-03-01</i>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="rate" class="mui-navigate-right">还款日
+								<i class="mui-pull-right i-font-normal">2015-03-20</i>
+								</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a id="rate" class="mui-navigate-right">资金安全
+								<i class="mui-pull-right i-font-normal">和讯</i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="investHis" class="mui-control-content">
+						<h5 class="mui-text-right" style="padding: 5px;">最近10条投资记录</h5>
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<div class="mui-row mui-text-center">
+									<div class="mui-col-xs-2"><strong>编号</strong></div>
+									<div class="mui-col-xs-3"><strong>投资人</strong></div>
+									<div class="mui-col-xs-3"><strong>投资金额</strong></div>
+									<div class="mui-col-xs-4"><strong>投资时间</strong></div>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="mui-row mui-text-center i-font-normal">
+									<div class="mui-col-xs-2 ">01</div>
+									<div class="mui-col-xs-3 ">w****f</div>
+									<div class="mui-col-xs-3">￥8,000</div>
+									<div class="mui-col-xs-4">2016.01.21</div>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="mui-row mui-text-center i-font-normal">
+									<div class="mui-col-xs-2 ">02</div>
+									<div class="mui-col-xs-3 ">w****f</div>
+									<div class="mui-col-xs-3">￥8,000</div>
+									<div class="mui-col-xs-4">2016.01.21</div>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="mui-row mui-text-center i-font-normal">
+									<div class="mui-col-xs-2 ">03</div>
+									<div class="mui-col-xs-3 ">w****f</div>
+									<div class="mui-col-xs-3">￥8,000</div>
+									<div class="mui-col-xs-4">2016.01.21</div>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="mui-row mui-text-center i-font-normal">
+									<div class="mui-col-xs-2 ">04</div>
+									<div class="mui-col-xs-3 ">w****f</div>
+									<div class="mui-col-xs-3">￥8,000</div>
+									<div class="mui-col-xs-4">2016.01.21</div>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<div class="mui-row mui-text-center i-font-normal">
+									<div class="mui-col-xs-2 ">05</div>
+									<div class="mui-col-xs-3 ">w****f</div>
+									<div class="mui-col-xs-3">￥8,000</div>
+									<div class="mui-col-xs-4">2016.01.21</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<!-- 第三张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/cbd.jpg">
-					</a>
-				</div>
-				<!-- 第四张 -->
-				<div class="mui-slider-item">
-					<a href="#">
-						<img src="images/yuantiao.jpg">
-					</a>
-				</div>
-				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-				<div class="mui-slider-item mui-slider-item-duplicate">
-					<a href="#">
-						<img src="images/shuijiao.jpg">
-					</a>
-				</div>
-			</div>
-			<div class="mui-slider-indicator">
-				<div class="mui-indicator mui-active"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-				<div class="mui-indicator"></div>
-			</div>
+			</div> 
+
 		</div>
 		<script src="js/mui.min.js"></script>
+		<script src="//cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			mui.init({
-				swipeBack:true //启用右滑关闭功能
+				swipeBack: true //启用右滑关闭功能
 			});
-			var slider = mui("#slider");
-			document.getElementById("switch").addEventListener('toggle', function(e) {
-				if (e.detail.isActive) {
-					slider.slider({
-						interval: 5000
-					});
-				} else {
-					slider.slider({
-						interval: 0
-					});
-				}
+			$("#investMoney").on("focus",function(){
+				var mask = mui.createMask();
+				mask.show();
 			});
 		</script>
 	</body>
